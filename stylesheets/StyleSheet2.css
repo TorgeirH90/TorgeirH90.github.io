@@ -1,34 +1,14 @@
-/*******************************************************************************
-Slate Theme for GitHub Pages
-by Jason Costello, @jsncostello
-*******************************************************************************/
-
+﻿
 @import url(pygment_trac.css);
-
-/*******************************************************************************
-MeyerWeb Reset
-*******************************************************************************/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
+body {
+  box-sizing: border-box;
+  color:#373737;
+  background: #212121;
+  font-size: 16px;
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -47,36 +27,8 @@ table {
   border-spacing: 0;
 }
 
-/*******************************************************************************
-Theme Styles
-*******************************************************************************/
-.Top-link
-{
- color:Blue;   
- 
-}
-
-
-
-
-body {
-  box-sizing: border-box;
-  color:#373737;
-  background: #212121;
-  font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-
-#blueText 
-{
-    color:Blue;
-    font-size: 1;
-}
-
 h1, h2, h3, h4, h5, h6 {
-  margin: 20px 0;
+  margin: 10px 0;
   font-weight: 700;
   color:#222222;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
@@ -96,9 +48,7 @@ h2 {
 
 h3 {
   font-size: 24px;
-  color:Blue;
 }
-
 
 h4 {
   font-size: 21px;
@@ -265,6 +215,33 @@ form {
   background: #f2f2f2;
   padding: 20px;
 }
+.anchor
+{
+    text-align:right;
+    color: Blue;
+    text-transform:uppercase;
+    font-size:"1";
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
 
 /*******************************************************************************
 Full-Width Styles
@@ -277,17 +254,17 @@ Full-Width Styles
 .inner {
   position: relative;
   max-width: 640px;
-  padding: 0px 0px;
+  padding: 20px 10px;
   margin: 0 auto;
 }
-/*here*/
+
 #forkme_banner {
   display: block;
   position: absolute;
   top:0;
   right: 10px;
   z-index: 10;
-  padding: 5px 50px 5px 10px;
+  padding: 10px 50px 10px 10px;
   color: #fff;
   background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
   font-weight: 700;
@@ -306,7 +283,7 @@ Full-Width Styles
 }
 
 #header_wrap .inner {
-  padding: 0px 10px 30px 10px;
+  padding: 50px 10px 30px 10px;
 }
 
 #project_title {
@@ -377,22 +354,11 @@ Full-Width Styles
 #footer_wrap {
   background: #212121;
 }
-
-/*here */
-
-.anchor
-{
-    text-align:right;
-    color: Blue;
-    text-transform:uppercase;
-    font-size:"1";
-}
-
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
 
-@media screen and (max-width: 48px) {
+@media screen and (max-width: 480px) {
   body {
     font-size:14px;
   }
